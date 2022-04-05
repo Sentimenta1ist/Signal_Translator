@@ -1,0 +1,48 @@
+<signal-program>   
+....<program>   
+........ 401 program
+........<procedure-identifier>   
+............<identifier> 1000 qw
+........ 59 ;
+........<block>   
+............<declarations>   
+................<procedure-declarations>   
+....................<procedure>   
+........................ 404 procedure
+........................<procedure-identifier>   
+............................<identifier> 1001 check1
+........................<parameters-list>   
+............................ 40 (
+............................<declarations-list>   
+................................<declaration>   
+....................................<variable-identifier>   
+........................................<identifier> 1002 fie
+....................................<identifiers-list>   
+........................................<empty>   
+All lexemes:
+   1   1   401 program
+   1   9  1000 qw
+   1  11    59 ;
+   2   1   404 procedure
+   2  11  1001 check1
+   2  17    40 (
+   2  18  1002 fie
+   2  21    41 )
+   3   1   402 begin
+   4   1   403 end
+   4   5    59 ;
+
+
+All ids:
+        qw 1000
+    check1 1001
+       fie 1002
+
+
+All separators:
+    ; 59
+    ) 41
+
+
+All errors:
+Error: (parser) absent ':' in declaration [col:21][row:2]
